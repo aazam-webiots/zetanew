@@ -1,0 +1,345 @@
+- var chartist              = true;
+- var apex                  = true;
+- var chartjs               = true;
+- var theme_customizer      = true;
+- var animate               = true;
+- var owlcarousel           = true;
+- var page_owlcarousel      = true;
+- var crypto_dashboard      = true;
+- var counter               = true;
+- var customcard            = true;
+- var clipboard             = true;
+- var prism                 = true;
+- var sidebar               = true;
+- var scrollbar             = true;
+doctype html
+html(lang='en')
+  include ../../components/header-files
+  body
+    include ../../components/taptop
+    // page-wrapper Start
+    #pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header
+      // Page Body Start
+      .page-body-wrapper
+        include ../../components/sidebar
+        .page-body  
+          .container-fluid
+            .page-title
+              .row
+                .col-12.col-sm-6.gx-0
+                  h3 
+                    | Crypto Dashboard
+
+                .col-12.col-sm-6
+                  ol.breadcrumb
+                    li.breadcrumb-item
+                      a(href='index.html').home-item
+                        i(data-feather="home")
+                    li.breadcrumb-item Dashboard
+                    li.breadcrumb-item.active Crypto-Dashboard
+         
+         
+          // Container-fluid starts
+          .container-fluid.crypto-dashboard-section
+            .row
+                .col-xxl-3.col-xl-6
+                  .card.crypto-dashborad-chart-section.o-hidden
+                    .card-header.card-no-border 
+                      .media 
+                        .media-body
+                          .coin-logo-img.bg-light-primary
+                           img(src="../assets/images/crypto-dashboard/bitcoin.png", alt="")
+                          h5.font-primary
+                            | Bitcoin
+                          span (BTC)
+                        .media-end
+                          h6 305.64
+                          span.badge.badge-light-primary
+                            i(data-feather="arrow-up") 
+                            | 10.5
+                    .card-body.p-0
+                        .crypto-dashborad-chart
+                          #bitcoin-chart
+                .col-xxl-3.col-xl-6
+                  .card.crypto-dashborad-chart-section.o-hidden
+                    .card-header.card-no-border 
+                      .media 
+                        .media-body 
+                          .coin-logo-img.bg-light-secondary
+                            img(src="../assets/images/crypto-dashboard/ripple.png", alt="")
+                          h5.font-secondary
+                            | Ripple
+                          span  (XRP)
+                        .media-end
+                          h6 305.64
+                          span.badge.badge-light-secondary
+                            i(data-feather="arrow-up") 
+                            | 10.5
+                    .card-body.p-0
+                        .crypto-dashborad-chart
+                          #ripple-chart
+                .col-xxl-3.col-xl-6
+                  .card.crypto-dashborad-chart-section.o-hidden
+                    .card-header.card-no-border 
+                      .media 
+                        .media-body 
+                          .coin-logo-img.bg-light-info
+                            img(src="../assets/images/crypto-dashboard/ethereum.png", alt="")
+                          h5.font-info
+                            | Ethereum
+                          span  (ETH)
+                        .media-end
+                          h6 305.64
+                          span.badge.badge-light-info
+                            i(data-feather="arrow-up") 
+                            | 10.5
+                    .card-body.p-0
+                        .crypto-dashborad-chart
+                          #ethereum-chart
+                .col-xxl-3.col-xl-6
+                  .card.crypto-dashborad-chart-section.o-hidden
+                    .card-header.card-no-border 
+                      .media 
+                        .media-body 
+                          .coin-logo-img.bg-light-warning
+                            img(src="../assets/images/crypto-dashboard/litecoin.png", alt="")
+                          h5.font-warning
+                            | Litecoin
+                          span (LTC)
+                        .media-end
+                          h6 305.64
+                          span.badge.badge-light-warning
+                            i(data-feather="arrow-up") 
+                            | 10.5
+                    .card-body.p-0
+                        .crypto-dashborad-chart
+                          #litecoin-chart
+                .col-xxl-5.ongoing-project-sec.trading-activities-sec
+                  .card.ongoing-project
+                    .card-header.card-no-border
+                      .media
+                        .media-body
+                          h5.mb-0 Trading Activities
+                        .icon-box.onhover-dropdown
+                          i(data-feather="more-horizontal")
+                          .icon-box-show.onhover-show-div
+                            ul 
+                              li 
+                                a  
+                                  | Done
+                              li 
+                                a 
+                                  | Pending
+                              li  
+                                a 
+                                  | Rejected
+                              li 
+                                a
+                                  | In Progress
+                    .card-body.pt-0
+                      .ongoing-project-table.table-responsive
+                        table.table.table-bordernone
+                          
+                          tbody 
+                            tr
+                              td
+                                .media 
+                                  i(data-feather="arrow-up").font-success
+                                  .table-box-img
+                                    img.img-fluid(src='../assets/images/crypto-dashboard/bitcoin.png',alt='Image description')
+                                  .media-body.ps-2
+                                    .avatar-details
+                                      h6 Nike Sports
+                                      span.f-10  Free delivery
+                              td
+                                h6 $9,594.72
+                                span 1,258.00 AKT
+                              td
+                                span 11:30 AM - 16 May 2021
+                              td
+                                h6 +$6,844
+                                
+                              td.text-center
+                                .badge.badge-light-primary Buy
+                            tr
+                              td
+                                .media
+                                  i(data-feather="arrow-down").font-danger
+                                  .table-box-img
+                                    img.img-fluid(src='../assets/images/crypto-dashboard/ripple.png',alt='Image description')
+                                  .media-body.ps-2
+                                    .avatar-details
+                                      h6 Gary
+                                      span.f-10  UK Desig Team
+                              td
+                                h6 $9,594.72
+                                span 1,258.00 AKT
+                              td
+                                span 11:30 AM - 16 May 2021
+                              td
+                                h6 +$6,844
+                                
+                              td.text-center
+                                .badge.badge-light-secondary Sell
+                            tr
+                              td
+                                .media
+                                  i(data-feather="arrow-up").font-success
+                                  .table-box-img
+                                    img.img-fluid(src='../assets/images/crypto-dashboard/ethereum.png',alt='Image description')
+                                  .media-body.ps-2
+                                    .avatar-details
+                                      h6 Gary
+                                      span.f-10  UK Desig Team
+                              td
+                                h6 $9,594.72
+                                span 1,258.00 AKT
+                              td
+                                span 11:30 AM - 16 May 2021
+                              td
+                                h6 +$6,844
+                                
+                              td.text-center
+                                .badge.badge-light-primary Buy
+                            tr
+                              td
+                                .media
+                                  i(data-feather="arrow-down").font-danger
+                                  .table-box-img
+                                     img.img-fluid(src='../assets/images/crypto-dashboard/litecoin.png',alt='Image description')
+                                  .media-body.ps-2
+                                    .avatar-details
+                                      h6 Gary
+                                      span.f-10  UK Desig Team
+                              td
+                                h6 $9,594.72
+                                span 1,258.00 AKT
+                              td
+                                span 11:30 AM - 16 May 2021 
+                              td
+                                h6 +$6,844
+                                
+                              td.text-center
+                                .badge.badge-light-secondary Sell
+                .col-xxl-4.col-xl-6.notification-sec.recent-activity-sec
+                  .card
+                    .card-header.card-no-border
+                          .media.media-dashboard
+                            .media-body 
+                              h5.mb-0 Notification     
+                            .icon-box.onhover-dropdown
+                              i(data-feather="more-horizontal")
+                              .icon-box-show.onhover-show-div
+                                ul 
+                                  li 
+                                    a  
+                                      | Latest 
+                                  li 
+                                    a 
+                                      | Earlist
+                                
+                    .card-body.pt-0.recent-activity
+                      .media
+                        .square-box.me-2
+                          img(src="../assets/images/avtar/teacher.png", alt="")
+                        .media-body
+                          h5 Clifford Hale
+                            span.font-theme-light.f-w-400.f-10.ms-3 Sent you a message
+                          h6 Hallo bro anak wes piro Saiki? wes Kulish urung?...
+                        span.badge.badge-light-theme-light.font-theme-light 2 hours ago
+
+                      .media
+                        .square-box.me-2
+                          img(src="../assets/images/avtar/teenager.png", alt="")
+                        .media-body
+                          h5 Clifford Hale
+                            span.font-theme-light.f-w-400.f-10.ms-3 Sent you a message
+                          h6 Hallo bro anak wes piro Saiki? wes Kulish urung?...
+                          span.font-primary.f-12 +380.234
+                        span.badge.badge-light-theme-light.font-theme-light 10 jul 2020
+
+                      .media
+                        .square-box.me-2
+                          img(src="../assets/images/avtar/chinese.png", alt="")
+                        .media-body
+                          h5 Clifford Hale
+                            span.font-theme-light.f-w-400.f-10.ms-3 Sent you a message
+                          h6 Hallo bro anak wes piro Saiki? wes Kulish urung?...
+                          .notification-chart-sec
+                              #notification-chart 
+                              span.font-primary.f-w-400.f-10 +39.69%
+                        span.badge.badge-light-theme-light.font-theme-light 22 Jun 2020
+                .col-xxl-3.chat-main-section 
+                  .card
+                    .card-header.card-no-border
+                        .media.media-dashboard
+                            .media-body 
+                              h5.mb-0 Chat   
+                            .icon-box.onhover-dropdown
+                              i(data-feather="more-horizontal")
+                              .icon-box-show.onhover-show-div
+                                ul 
+                                  li 
+                                    a  
+                                      | Latest 
+                                  li 
+                                    a 
+                                      | Earlist  
+                    .card-body.pt-0.chat-box
+                      .chat 
+                        .media.left-side-chat
+                          .square-box.me-2 
+                            img(src="../assets/images/avtar/chat-user-1.png", alt="")
+                          .media-body 
+                            .msg-box
+                              span 
+                                | Project has been already finished and i have results to show you. 
+                        .media.right-side-chat
+                          .media-body 
+                            .msg-box
+                              span 
+                                | Well I am not sure. The rest of the team is not here yet 🙂
+                          .square-box.ms-2 
+                            img(src="../assets/images/avtar/chat-user-2.png", alt="")
+                        .media.left-side-chat
+                          .square-box.me-2 
+                            img(src="../assets/images/avtar/chat-user-1.png", alt="")
+                          .media-body 
+                            .img-msg-box
+                              img(src="../assets/images/dashboard-2/rectangle-26.png", alt="").d-inline-block.img-60
+                              img(src="../assets/images/dashboard-2/rectangle-27.png", alt="").d-inline-block.img-60
+                    
+                      .input-group
+                        span.input-group-text.bg-transparent  🙂
+                        input.form-control(type="text", placeholder="" )
+                        span.input-group-text.bg-primary
+                          i.fa.fa-paper-plane.font-white
+
+
+                .col-xxl-7.col-xl-6
+                  .card      
+                    .card-body
+                        #candlestick-chart
+                .col-xxl-5.buy-sell-section     
+                  .card 
+                    .card-body 
+                      ul.nav.nav-pills#pills-tab( role="tablist")
+                        li.nav-item
+                          button#pills-home-tab gh
+                        li.nav-item
+                          button#pills-profile-tab fgh
+                      .tab-content#pills-tabContent
+                        .tab-pane.fade.show.active#pills-home
+                          form(action="")
+                            label(for="") 
+                            input(type="text")  
+                        .tab-pane.fade#pills-profile
+                          form(action="")
+                              label(for="") fgj
+                              input(type="text") 
+
+
+          // Container-fluid Ends
+        include ../../components/footer 
+    include ../../components/footer-files
