@@ -323,23 +323,96 @@ html(lang='en')
                         #candlestick-chart
                 .col-xxl-5.buy-sell-section     
                   .card 
-                    .card-body 
-                      ul.nav.nav-pills#pills-tab( role="tablist")
-                        li.nav-item
-                          button#pills-home-tab gh
-                        li.nav-item
-                          button#pills-profile-tab fgh
-                      .tab-content#pills-tabContent
-                        .tab-pane.fade.show.active#pills-home
-                          form(action="")
-                            label(for="") 
-                            input(type="text")  
-                        .tab-pane.fade#pills-profile
-                          form(action="")
-                              label(for="") fgj
-                              input(type="text") 
+                    .card-header.card-no-border 
+                      .media 
+                        .media-body
+                          ul#pills-tab.nav.nav-pills(role='tablist')
+                            
+                                  li.nav-item
+                                    a#pills-home-tab.nav-link.active(data-bs-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') Buy 
+                                      
+                                  li.nav-item
+                                    a#pills-profile-tab.nav-link(data-bs-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') Sell 
+                        .media-end 
+                          h5 USD Balance: $ 7200.00   
+
+
+                    .card-body.pt-0
+                      #pills-tabContent.tab-content
+                        #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab')
+                            .buy-sell-form 
+                              form(action="")
+                                .row 
+                                  .col-5.amount-sec
+                                    h5  Amount
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="7,904.65")
+                                      span.input-group-text.bg-transparent#basic-addon1 USD
+
+                                  .col-2
+                                    .convert-img-sec.text-center
+                                        img(src="../assets/images/crypto-dashboard/convert.png", alt="")
+                                  .col-5.coin-sec
+                                    .dropdown.float-end 
+                                      .btn.btn-outline-primary.dropdown-toggle(type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false")
+                                        | Dropdown  
+                                      ul.dropdown-menu(aria-labelledby="dropdownMenuButton1")
+                                        li 
+                                          a.dropdown-item item
+                                        li 
+                                          a.dropdown-item item1
+                                        li 
+                                          a.dropdown-item item1
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="30")
+                                      span.input-group-text.bg-transparent#basic-addon2 BTC
+                                  .col-12.amount-sec
+                                    h5  Total   
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="58794,53")
+                                      span.input-group-text.bg-transparent#basic-addon1 TUSD
+                                  .col-12.buynow-btn
+                                    button.btn.btn-primary.text-center  Buy  Now!
+
+
+
+                        #pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-profile-tab')
+                           .buy-sell-form 
+                              form(action="")
+                                .row 
+                                  .col-5.amount-sec
+                                    h5  Amount
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="7,904.65")
+                                      span.input-group-text.bg-transparent#basic-addon1 USD
+
+                                  .col-2
+                                    .convert-img-sec.text-center
+                                        img(src="../assets/images/crypto-dashboard/convert.png", alt="")
+                                  .col-5.coin-sec
+                                    .dropdown.float-end 
+                                      .btn.btn-outline-primary.dropdown-toggle(type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false")
+                                        | Dropdown  
+                                      ul.dropdown-menu(aria-labelledby="dropdownMenuButton1")
+                                        li 
+                                          a.dropdown-item item
+                                        li 
+                                          a.dropdown-item item1
+                                        li 
+                                          a.dropdown-item item1
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="30")
+                                      span.input-group-text.bg-transparent#basic-addon2 BTC
+                                  .col-12.amount-sec
+                                    h5  Total   
+                                    .input-group
+                                      input.form-control(type="text", name="" , placeholder="58794,53")
+                                      span.input-group-text.bg-transparent#basic-addon1 TUSD
+                                  .col-12.buynow-btn
+                                    button.btn.btn-primary.text-center  Buy  Now!
 
 
           // Container-fluid Ends
         include ../../components/footer 
-    include ../../components/footer-files
+    include ../../components/footer-files 
+  

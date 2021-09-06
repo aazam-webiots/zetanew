@@ -19,7 +19,7 @@ function style() {
 
 // pug to html
 function html() {
-  return gulp.src('assets/pug/pages/theme/crypto-dashboard.pug')
+  return gulp.src('assets/pug/pages/theme/dashboard-02.pug')
     .pipe(pug({
     pretty: true  
     }))
@@ -34,10 +34,10 @@ function html() {
 // Watch function
 function watch() {
   browserSync.init({
-    proxy: 'http://localhost/zeta/theme/crypto-dashboard.html'
+    proxy: 'http://localhost/zeta/theme/dashboard-02.html'
   });
   gulp.watch('assets/scss/**/*.scss', style);
-  gulp.watch('assets/pug/pages/theme/crypto-dashboard.pug', html);
+  gulp.watch('assets/pug/pages/theme/dashboard-02.pug', html);
   gulp.watch('./*.html').on('change', browserSync.reload);
   gulp.watch('assets/css/*.css').on('change', browserSync.reload);
 }

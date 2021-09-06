@@ -167,3 +167,96 @@
         }
     }
 }
+
+.buy-sell-section{
+    .card-header{
+        .media{
+            align-items: center;
+            ul{
+                background-color: $light;
+                border-radius: 5px;
+                max-width: 174px;
+                    li{
+                        display: inline-block;
+                        a{
+                            padding: 10px 30px;
+                        }
+
+                    }   
+                
+            }
+            .media-end{
+              h5{
+                  font-size: 15px;
+                  color: $light-1;
+                  letter-spacing: 1px;
+              }
+            }   
+        }
+        }
+        .card-body{
+            .buy-sell-form {
+                form{
+                    
+                    .amount-sec, .coin-sec{
+                        .input-group{
+                        
+                            background-color: $light;
+                            border-radius: 5px;
+                        
+                            input{
+                                background-color: transparent;
+                                border: none;
+                                letter-spacing: 1px;
+                                color: $light-1;  
+                                font-size: 15px;
+                                font-weight: 500;  
+                                padding: 12px 15px;
+                            }
+                            .input-group-text{
+                                border: none;
+                                letter-spacing: 1px;
+                                color: $light-1;
+                                font-size: 15px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .amount-sec{
+                    h5{
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-bottom: 14px;
+                        letter-spacing: 0.5px;
+                    }
+                    }  
+
+                    .convert-img-sec{
+                        img{
+                            margin: 40px auto;
+                        }   
+                    }
+                    .coin-sec{
+                        .dropdown {
+                            .dropdown-toggle{
+                                background-color: $white;
+                                padding: 5px 14px;
+                                font-size: 10px;
+                                box-sizing: border-box;
+                                border-radius: 5px;  
+                                margin-bottom: 5px;    
+                                position: relative;   
+
+                            }
+                        }
+                    }
+                    .buynow-btn{
+                        margin-top: 30px;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+}

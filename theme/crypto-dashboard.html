@@ -959,27 +959,98 @@
               </div>
               <div class="col-xxl-5 buy-sell-section">    
                 <div class="card"> 
-                  <div class="card-body"> 
-                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                      <li class="nav-item">
-                        <button id="pills-home-tab">gh</button>
-                      </li>
-                      <li class="nav-item">
-                        <button id="pills-profile-tab">fgh</button>
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                      <div class="tab-pane fade show active" id="pills-home">
-                        <form action="">
-                          <label for=""> </label>
-                          <input type="text">
-                        </form>
+                  <div class="card-header card-no-border"> 
+                    <div class="media"> 
+                      <div class="media-body">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                          <li class="nav-item"><a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Buy </a></li>
+                          <li class="nav-item"><a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sell </a></li>
+                        </ul>
                       </div>
-                      <div class="tab-pane fade" id="pills-profile">
-                        <form action="">
-                          <label for="">fgj</label>
-                          <input type="text">
-                        </form>
+                      <div class="media-end"> 
+                        <h5>USD Balance: $ 7200.00   </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="buy-sell-form"> 
+                          <form action="">
+                            <div class="row"> 
+                              <div class="col-5 amount-sec">
+                                <h5> Amount</h5>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="7,904.65"><span class="input-group-text bg-transparent" id="basic-addon1">USD</span>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <div class="convert-img-sec text-center"><img src="../assets/images/crypto-dashboard/convert.png" alt=""></div>
+                              </div>
+                              <div class="col-5 coin-sec">
+                                <div class="dropdown float-end"> 
+                                  <div class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown  </div>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li> <a class="dropdown-item">item</a></li>
+                                    <li> <a class="dropdown-item">item1</a></li>
+                                    <li> <a class="dropdown-item">item1</a></li>
+                                  </ul>
+                                </div>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="30"><span class="input-group-text bg-transparent" id="basic-addon2">BTC</span>
+                                </div>
+                              </div>
+                              <div class="col-12 amount-sec">
+                                <h5> Total   </h5>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="58794,53"><span class="input-group-text bg-transparent" id="basic-addon1">TUSD</span>
+                                </div>
+                              </div>
+                              <div class="col-12 buynow-btn">
+                                <button class="btn btn-primary text-center"> Buy  Now!</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="buy-sell-form"> 
+                          <form action="">
+                            <div class="row"> 
+                              <div class="col-5 amount-sec">
+                                <h5> Amount</h5>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="7,904.65"><span class="input-group-text bg-transparent" id="basic-addon1">USD</span>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <div class="convert-img-sec text-center"><img src="../assets/images/crypto-dashboard/convert.png" alt=""></div>
+                              </div>
+                              <div class="col-5 coin-sec">
+                                <div class="dropdown float-end"> 
+                                  <div class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown  </div>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li> <a class="dropdown-item">item</a></li>
+                                    <li> <a class="dropdown-item">item1</a></li>
+                                    <li> <a class="dropdown-item">item1</a></li>
+                                  </ul>
+                                </div>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="30"><span class="input-group-text bg-transparent" id="basic-addon2">BTC</span>
+                                </div>
+                              </div>
+                              <div class="col-12 amount-sec">
+                                <h5> Total   </h5>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" name="" placeholder="58794,53"><span class="input-group-text bg-transparent" id="basic-addon1">TUSD</span>
+                                </div>
+                              </div>
+                              <div class="col-12 buynow-btn">
+                                <button class="btn btn-primary text-center"> Buy  Now!</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>

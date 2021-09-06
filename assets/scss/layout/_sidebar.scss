@@ -389,6 +389,7 @@
           .dropdown-title {
             padding: 20px;
             border-bottom: 1px solid rgba($dropdown-border-color, 0.3);
+            border-top: 5px solid var(--theme-deafult);
               h6 {
                 display: inline-block;
               }
@@ -1397,7 +1398,7 @@ s
             }
 
             ~.footer-fix {
-              width: calc(100% - 90px);
+              width: 100%;
             }
           }
 
