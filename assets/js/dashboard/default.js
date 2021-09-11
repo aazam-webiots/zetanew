@@ -94,13 +94,8 @@ var options = {
             show: false,
         },
         crosshairs: {
-            show: true,
-            position: 'back',
-            stroke: {
-                color: '#6362E7',
-                width: 1,
-                dashArray: 5,
-            },
+            show: false,
+           
         },
     },
     legend: {

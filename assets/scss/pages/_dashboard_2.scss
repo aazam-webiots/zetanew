@@ -220,16 +220,23 @@
   }
 }
 
-.recent-orders-sec {
-  .recent-orders {
-    .card-body {
+.recent-orders-sec.ongoing-project-sec  {
+  .ongoing-project{
+    &.recent-orders {
+      .card-body {
       .ongoing-project-table.table-responsive {
-        table {
-          tbody {
-            tr {
-              td {
-                min-width: unset !important;
-                vertical-align: middle;
+          table {
+            tbody {
+              tr {
+                td {
+                 
+                  vertical-align: middle;
+
+                  &:first-child{
+                     min-width: 140px;
+                  }
+                }
+
               }
             }
           }
@@ -237,6 +244,7 @@
       }
     }
   }
+ 
 }
 
 .support-sec.profile-greeting {
@@ -399,6 +407,9 @@
 }
 
 
+
+
+
 @media screen and (min-width: 1400px) and (max-width: 1795px) {
   .revenue-category-sec {
     .card-body {
@@ -415,21 +426,29 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1499px) {
+  
+}
 
 
-@media screen and (min-width: 768px) and (max-width: 1399px) {
+@media screen and (min-width: 768px) and (max-width: 1499px) {
 
   .ecommerce-dashboard-section {
     .sales-state-sec {
       order: 0;
+      width: 50% !important;
     }
 
     .invoice-overviwe-sec {
-      order: 2;
+      order: 1;
+      width: 50% !important;
     }
 
-    .news.hot-selling-product-sec {
-      order: 1;
+    .hot-selling-product-sec {
+      &.news{
+      order: 2;
+      width: 100% !important;
+      }
     }
 
     .cutom-row {

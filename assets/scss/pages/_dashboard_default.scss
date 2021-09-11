@@ -92,7 +92,6 @@ $badge-light-color in (primary, $primary-color),
       a {
         font-weight: 500;
         padding: 10px 20px;
-        border-radius: 10px;
         font-size: 12px;
         svg {
           height: 14px;
@@ -165,7 +164,7 @@ $badge-light-color in (primary, $primary-color),
 .weekly-column-chart {
   .small-chart-new {  
     height: 190px;
-    margin-left: -20px;
+    margin-left: -16px;
     margin-top: -10px;
 
     .ct-chart-line .ct-label,
@@ -433,8 +432,8 @@ $badge-light-color in (primary, $primary-color),
                 }
               }
 
-              td {
-
+              td {  
+                vertical-align: middle;
                 padding: 15px 0;
                 &:not(:last-child){
                 min-width: 165px ;
@@ -568,17 +567,23 @@ $badge-light-color in (primary, $primary-color),
 
     ul {
       li {
-        padding: 15px;
-        border-bottom: 1px solid rgba($dark, 0.1);
-        font-family: Roboto;
-        color: #2b2b2b;
-        opacity: 0.6;
-        font-size: 13px;
         padding: 8px 12px;
-        background: #fff;
+        border-bottom: 1px solid rgba($dark, 0.1);
+        font-size: 12px;
+        background: $white;
+        font-family: $font-roboto;
 
-        &:last-child {
+        &:last-child {  
           border: none;
+        }
+
+        a{
+          color: $light-font;
+        }
+        &:hover{
+          a{
+            color: var(--theme-deafult);
+          }
         }
       }
     }
@@ -2573,15 +2578,13 @@ footer {
   .report-sec {
     border-left: 1px solid rgba($dark, 0.1);
     .card-header{
-      .media-dashboard{
-        .media-body{
+   
           h5{
-             font-size: 15px;
+             font-size: 15px !important;
              color: $dark ;
              font-weight: 500 ;
           }
-        } 
-      }
+     
     }
 
     .report-main {
@@ -2638,7 +2641,7 @@ footer {
     }
 
     button {
-      border: 1px solid #fff !important;
+      margin-top: 35px;
       padding: 10px 15px;
       font-size: 12px;
       border-radius: 5px;

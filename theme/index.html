@@ -38,14 +38,10 @@
   </head>
   <body>
     <div class="loader-wrapper">
-      <div class="loader-index"><span></span></div>
-      <svg>
-        <defs></defs>
-        <filter id="goo">
-          <fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
-          <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
-        </filter>
-      </svg>
+      <div class="push-pop loader">
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -130,8 +126,8 @@
                     <div class="flip-card-inner">
                       <div class="front">
                         <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
-                        <ul class="bookmark-dropdown">
-                          <li>
+                        <ul class="bookmark-dropdown pb-0">
+                          <li class="p-0">
                             <div class="row">
                               <div class="col-4 text-center">
                                 <div class="bookmark-content">
@@ -693,11 +689,7 @@
                     <div class="card">
                       <div class="card-body">
                         <div class="weekly-column-chart">
-                          <div class="hospital-small-chart">
-                            <div class="small-bar">
-                              <div class="small-chart-new"> </div>
-                            </div>
-                          </div>
+                          <div class="small-chart-new"> </div>
                         </div>
                       </div>
                     </div>
@@ -706,7 +698,7 @@
               </div>
               <div class="col-xxl-3 col-xl-6 news">
                 <div class="card">
-                  <div class="card-header card-no-border">
+                  <div class="card-header card-no-border"> 
                     <div class="header-top">
                       <h5 class="m-0">News &amp; Update</h5>
                       <div class="icon-box onhover-dropdown"><i data-feather="more-horizontal"></i>
@@ -717,7 +709,7 @@
                             <li> <a>
                                  Yeasterday</a></li>
                             <li> <a>
-                                 Tommorow</a></li>
+                                 Tommorow                              </a></li>
                           </ul>
                         </div>
                       </div>
@@ -726,8 +718,8 @@
                   <div class="card-body pt-0">
                     <div class="news-update media"><img class="img-fluid me-3 b-r-5" src="../assets/images/dashboard/Rectangle-26.jpg" alt="">
                       <div class="media-body">
-                        <h5>Google Project Apply</h5>
-                        <p>Today's Breaking News..</p>
+                        <h5>Google  Apply</h5>
+                        <p>Today's News..</p>
                       </div><span class="badge badge-light-theme-light font-theme-light">1day ago</span>
                     </div>
                     <div class="news-update media"> <img class="img-fluid me-3 b-r-5" src="../assets/images/dashboard/Rectangle-27.jpg" alt="">
@@ -946,12 +938,21 @@
                       </div>
                     </div>
                     <div class="col-lg-6 col-sm-6 p-0 report-sec">
-                      <div class="card-header card-no-border">
-                        <div class="media media-dashboard">
-                          <div class="media-body"> 
-                            <h5 class="mb-0">Report</h5>
+                      <div class="card-header card-no-border"> 
+                        <div class="header-top">
+                          <h5 class="m-0">News &amp; Update</h5>
+                          <div class="icon-box onhover-dropdown"><i data-feather="more-horizontal"></i>
+                            <div class="icon-box-show onhover-show-div">
+                              <ul> 
+                                <li> <a>
+                                     Today</a></li>
+                                <li> <a>
+                                     Yeasterday</a></li>
+                                <li> <a>
+                                     Tommorow</a></li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="icon-box"><i data-feather="more-horizontal"></i></div>
                         </div>
                       </div>
                       <div class="card-body pt-0">
@@ -1007,7 +1008,7 @@
                   <div class="card-body">
                     <div class="premium-access">
                       <h6 class="f-22">Premium Access!</h6><span>We add 20+ new features and update community in your project We add 20+ new features</span>
-                      <button class="btn btn-primary mt-3 mt-md-5"> Try now for free</button>
+                      <button class="btn btn-outline-white_color"> Try now for free</button>
                     </div>
                   </div>
                 </div>

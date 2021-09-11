@@ -19,13 +19,10 @@ html(lang='en')
   include ../../components/header-files
   body
     .loader-wrapper
-      .loader-index
-        span
-      svg
-        defs
-        filter#goo
-          fegaussianblur(in='SourceGraphic' stddeviation='11' result='blur')
-          fecolormatrix(in='blur' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9' result='goo')  
+      .push-pop.loader
+        div
+        div
+      
     //- include ../../components/taptop
     // page-wrapper Start
     #pageWrapper.page-wrapper.compact-wrapper
@@ -52,7 +49,7 @@ html(lang='en')
           .container-fluid.default-dashboard-section
             .row 
               .col-xxl-6.col-xl-12.morning-sec
-                .card.profile-greeting977
+                .card.profile-greeting
                   .card-body
                     .media
                       .media-body 
@@ -80,12 +77,10 @@ html(lang='en')
                     .card
                       .card-body
                           .weekly-column-chart
-                            .hospital-small-chart
-                              .small-bar
                                 .small-chart-new  
               .col-xxl-3.col-xl-6.news
                 .card
-                  .card-header.card-no-border
+                  .card-header.card-no-border 
                     .header-top
                       h5.m-0 News &amp; Update
                       .icon-box.onhover-dropdown
@@ -100,8 +95,7 @@ html(lang='en')
                                     | Yeasterday
                                 li  
                                   a 
-                                    | Tommorow
-                               
+                                    | Tommorow                              
                   .card-body.pt-0
                     .news-update.media
                       img.img-fluid.me-3.b-r-5(src="../assets/images/dashboard/Rectangle-26.jpg" alt="")
@@ -300,12 +294,23 @@ html(lang='en')
                         div  
                            #transaction-chart
                     .col-lg-6.col-sm-6.p-0.report-sec
-                      .card-header.card-no-border
-                        .media.media-dashboard
-                          .media-body 
-                            h5.mb-0 Report
-                          .icon-box
-                            i(data-feather="more-horizontal")
+                      .card-header.card-no-border 
+                        .header-top
+                          h5.m-0 News &amp; Update
+                          .icon-box.onhover-dropdown
+                                i(data-feather="more-horizontal")
+                                .icon-box-show.onhover-show-div
+                                  ul 
+                                    li 
+                                      a  
+                                        | Today
+                                    li 
+                                      a 
+                                        | Yeasterday
+                                    li  
+                                      a 
+                                        | Tommorow
+                  
                       .card-body.pt-0
                         .row 
                           .col-6.report-main
@@ -342,7 +347,7 @@ html(lang='en')
                     .premium-access
                       h6.f-22 Premium Access!
                       span We add 20+ new features and update community in your project We add 20+ new features
-                      button.btn.btn-primary.mt-3.mt-md-5  Try now for free
+                      button.btn.btn-outline-white_color  Try now for free
           
           // Container-fluid Ends
         include ../../components/footer        

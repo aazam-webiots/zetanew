@@ -526,6 +526,9 @@ $fb;
 .btn-primary {
   background-color: var(--theme-deafult) !important;
   border-color: var(--theme-deafult) !important;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
 
   &.disabled,
   &:disabled {
@@ -537,7 +540,15 @@ $fb;
     box-shadow: 0 0 0 0.2rem lighten( $primary-color, 30%);
   }
   
+
+    &:hover,
+    &:focus,
+    &:active{
+    background-color: darken($primary-color, $amount: 3) !important;
+  }
+
 }
+
 
 .btn-secondary {
   background-color: var(--theme-secondary) !important;
@@ -553,6 +564,12 @@ $fb;
   &:focus {
     box-shadow: 0 0 0 0.2rem lighten($primary-color, 30%);
   }
+
+     &:hover,
+    &:focus,
+    &:active{
+    background-color: darken($primary-color, $amount: 3) !important;
+    }
 }
 
 
@@ -584,9 +601,16 @@ $btn-color in (success, $success-color),
       background-color: $btn-color !important;
       border-color: $btn-color !important;
     }
+    &:hover,
+    &:focus,
+    &:active{
+      background-color: darken($btn-color, $amount: 3) !important;
+      
+    } 
 
     &:focus {
       box-shadow: 0 0 0 0.2rem lighten($btn-color, 30%);
+  
     }
   }
 }
@@ -635,6 +659,7 @@ $btn-color in (primary, $primary-color),
     color: $btn-color;
     background-color: transparent;
 
+
     &.disabled {
       color: $btn-color;
     }
@@ -651,6 +676,8 @@ $btn-color in (primary, $primary-color),
       background-color: darken($btn-color, 10%) !important;
       border-color: darken($btn-color, 10%) !important;
     }
+
+
   }
 }
 
@@ -1125,7 +1152,18 @@ button {
   }
 }
 
+
 // text-color css 
+
+
+
+// for white outline nutton hover effect css start  
+//  .btn-outline-white_color{
+//   &:hover{
+//     background-color: darken(var(--theme-deafult), 28%);
+//   }
+// }
+// for white outline nutton hover effect css end
 
 
 

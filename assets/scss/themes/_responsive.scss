@@ -4794,6 +4794,11 @@
       }
     }
   }
+.total-transactions-sec {
+  .report-sec{
+    border-left: none;
+  }
+}
 
   .btn {
     padding: 6px 20px;
@@ -6822,12 +6827,8 @@
   .profile-greeting{
     .card-body{
       .cartoon-img{
-        right: 10px;
-        img{
-          float: right;
-          mix-blend-mode: overlay;
-          max-width: 60%;
-      }
+     
+      display: none;
     }
   }
 }
