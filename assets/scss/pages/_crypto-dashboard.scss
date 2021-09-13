@@ -76,11 +76,15 @@
                 .msg-box{
                     background-color: var(--theme-deafult);
                     padding: 10px;
-                    font-size: 10px;
                     border-radius: 0px 8px 8px 8px;
-                    color: $white;
-                    font-weight: 400;   
                     max-width: 90%;
+                span{
+                    display: block;
+                    font-size: 12px;
+                    color: $white;
+                    font-weight: 400;  
+                    line-height: 1.7;
+                }
                 }
                 .img-msg-box{
                     img{
@@ -95,13 +99,20 @@
                 .msg-box{
                     background-color:$light;
                     padding: 10px;
-                    font-size: 10px;
+                   
                     border-radius: 8px 0 8px 8px;
-                    color: $light-1;
-                    font-weight: 400;
-                    text-align: right;
+                   
                     float: right;
                     max-width: 80%;
+
+                    span{
+                        font-size: 10px;
+                        color: $light-1;
+                        font-weight: 400;
+                        text-align: right;
+                        display: block;
+                        line-height: 1.7;
+                    }
                 }
             }
         }
@@ -175,7 +186,7 @@
             ul{
                 background-color: $light;
                 border-radius: 5px;
-                max-width: 174px;
+                max-width: 173px;
                     li{
                         display: inline-block;
                         a{
@@ -247,7 +258,11 @@
                                 margin-bottom: 5px;    
                                 position: relative;   
 
+                                &:hover{
+                                    color: $white !important;
+                                }
                             }
+                          
                         }
                     }
                     .buynow-btn{

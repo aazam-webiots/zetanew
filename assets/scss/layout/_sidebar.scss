@@ -3240,9 +3240,9 @@ s
   display: flex;
   align-items: flex-end;
   margin-top: 70px;
-  padding: 0 22px;
-  .sidebar-img-content{
 
+  .sidebar-img-content{
+    padding: 0 22px;
     background: $primary-color;
     color: $white;
     height: 100%;
@@ -3250,7 +3250,7 @@ s
     border-radius: 20px;
     text-align: center;
     img{
-     margin-top:-80px;
+     margin-top:-65px;
 
     }
     span{

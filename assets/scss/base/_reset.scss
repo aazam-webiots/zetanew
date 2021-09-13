@@ -562,13 +562,13 @@ $fb;
   }
 
   &:focus {
-    box-shadow: 0 0 0 0.2rem lighten($primary-color, 30%);
+    box-shadow: 0 0 0 0.2rem lighten($secondary-color, 30%);
   }
 
      &:hover,
     &:focus,
     &:active{
-    background-color: darken($primary-color, $amount: 3) !important;
+    background-color: darken($secondary-color, $amount: 3) !important;
     }
 }
 

@@ -135,12 +135,12 @@ $badge-light-color in (primary, $primary-color),
       font-size: 22px;
       letter-spacing: 0.5px;
       color: $dark;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
 
     }
 
     span {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 0.5px;
       color: $light-1;
     }
@@ -405,7 +405,7 @@ $badge-light-color in (primary, $primary-color),
 
             tr {
               th {
-                font-size: 12px;
+                font-size: 14px;
                 color: $dark;
                 text-align: left;
                 padding-left: 0;
@@ -419,6 +419,7 @@ $badge-light-color in (primary, $primary-color),
                 &:last-child {
                   border-top-right-radius: 5px ;
                   border-bottom-right-radius: 5px;
+                  text-align: right;
                 } 
               }
             }
@@ -429,16 +430,16 @@ $badge-light-color in (primary, $primary-color),
               &:last-child {
                 td {
                   padding-bottom: 0;
+                 
                 }
               }
 
               td {  
                 vertical-align: middle;
                 padding: 15px 0;
-                &:not(:last-child){
-                min-width: 165px ;
-         
-                }
+               &:last-child{
+                 text-align: right;
+               }
 
                 .media {
                   .square-box{
@@ -448,9 +449,9 @@ $badge-light-color in (primary, $primary-color),
 
                 }
 
-                h6 {
+                h5 {
+
                   font-weight: 500;
-             
                   color: rgba($dark, 0.8);
                   margin-bottom: 4px;
                  
@@ -498,16 +499,10 @@ $badge-light-color in (primary, $primary-color),
       }
 
       .media-body {
-        h5 {
-          font-family: $font-roboto;
-          font-size: 12px;
-          color: $dark;
-
-        }
+        
 
         h6 {
-          font-family: $font-roboto;
-          font-size: 10px;
+        
           color: $light-1;
 
           span {
